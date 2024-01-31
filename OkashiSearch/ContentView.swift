@@ -12,6 +12,7 @@ struct ContentView: View {
     var okashiDataList = OkashiData()
     
     @State var inputText = ""
+    @State var isShowSafari = false
     
     var body: some View {
         VStack {
@@ -24,19 +25,29 @@ struct ContentView: View {
             .padding()
             
             List(okashiDataList.okashiList) { okashi in
-                HStack {
-                    AsyncImage(url: okashi.image) { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 40)
-                    } placeholder: {
-                        ProgressView()
+                Button {
+                    okashiDataList.okashiLink = okashi.url
+                    isShowSafari.toggle()
+                } label: {
+                    HStack {
+                        AsyncImage(url: okashi.image) { image in
+                            image
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 40)
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        Text(okashi.name)
                     }
-                    Text(okashi.name)
                 }
-                
             }
+            .sheet(isPresented: $isShowSafari, content: {
+                if let urlLink = okashiDataList.okashiLink {
+                    SafariView(url: urlLink)
+                        .ignoresSafeArea()
+                }
+            })
         }
     }
 }

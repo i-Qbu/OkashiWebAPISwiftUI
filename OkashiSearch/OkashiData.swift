@@ -24,6 +24,7 @@ struct OkashiItem: Identifiable {
         let item: [Item]?
     }
     var okashiList: [OkashiItem] = []
+    var okashiLink: URL?
     // Web API検索用メソッド 第一引数：keyword 検索したいワード
     func searchOkashi(keyword: String) {
         print("searchOkashiメソッドで受け取った値：\(keyword)")
