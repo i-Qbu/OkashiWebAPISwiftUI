@@ -11,6 +11,7 @@
 		A8D4BB152B6A622700EBF17B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4BB142B6A622700EBF17B /* ContentView.swift */; };
 		A8D4BB172B6A622B00EBF17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D4BB162B6A622B00EBF17B /* Assets.xcassets */; };
 		A8D4BB1B2B6A622B00EBF17B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D4BB1A2B6A622B00EBF17B /* Preview Assets.xcassets */; };
+		A8D4BB222B6A635D00EBF17B /* OkashiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4BB212B6A635D00EBF17B /* OkashiData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A8D4BB162B6A622B00EBF17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D4BB182B6A622B00EBF17B /* OkashiSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OkashiSearch.entitlements; sourceTree = "<group>"; };
 		A8D4BB1A2B6A622B00EBF17B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8D4BB212B6A635D00EBF17B /* OkashiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkashiData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				A8D4BB122B6A622700EBF17B /* OkashiSearchApp.swift */,
 				A8D4BB142B6A622700EBF17B /* ContentView.swift */,
+				A8D4BB212B6A635D00EBF17B /* OkashiData.swift */,
 				A8D4BB162B6A622B00EBF17B /* Assets.xcassets */,
 				A8D4BB182B6A622B00EBF17B /* OkashiSearch.entitlements */,
 				A8D4BB192B6A622B00EBF17B /* Preview Content */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D4BB152B6A622700EBF17B /* ContentView.swift in Sources */,
+				A8D4BB222B6A635D00EBF17B /* OkashiData.swift in Sources */,
 				A8D4BB132B6A622700EBF17B /* OkashiSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
